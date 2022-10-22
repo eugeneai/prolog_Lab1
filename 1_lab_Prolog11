@@ -1,0 +1,26 @@
+dog(flash).
+dog(rover).
+cat(butsi).
+horse(star).
+
+
+color(flash,black).
+color(butsi,brown).
+color(rover,red).
+color(star,white).
+
+pet(X):-
+    dog(X);cat(X).
+animal(X):-
+    pet(X).
+animal(X):-
+    horse(X).
+
+owns(tom, Dog):-
+    dog(Dog),
+   \+ color(Dog, black).
+
+owns(kate, Ani):-
+    horse(Ani);
+animal(Ani),
+color(Ani,black).
