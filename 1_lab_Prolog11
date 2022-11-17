@@ -24,3 +24,5 @@ owns(kate, Ani):-
     horse(Ani);
 animal(Ani),
 color(Ani,black).
+
+% В комментариях надо запросы и их результаты показать.
